@@ -1,14 +1,17 @@
 export function TwitterFollowCard({userName, name}){
     return(
-        <article>
-            <header>
-                <img src="../public/imagenes/si.jpg" alt="" />
-                <div>
+        <article className="tw-followCard">
+            <header className="tw-followCard-header">
+                <img 
+                className="tw-followCard-avatar"
+                src="../public/imagenes/si.jpg" 
+                alt="Avatar del usuario" />
+                <div className="tw-followCard-user">
                     <strong>{name}</strong>
-                    <span>{userName}</span>
+                    <span className="tw-followCard-userName">{userName}</span>
                 </div>
             </header>
-            <aside>
+            <aside className="tw-followCard-button">
                 <button>Seguir</button>
             </aside>
         </article>

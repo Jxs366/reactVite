@@ -1,21 +1,33 @@
-article{
+.tw-followCard{
     color: white;
     display:flex;
-    padding: 10px;
+    margin-bottom: 3px;
     font-size: .8rem;
+    justify-content: space-between;
 }
-article header{
+.tw-followCard-header{
     display: flex;
     align-items: center;
     gap: 4px;
 }
-article img{
+.tw-followCard-avatar{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     padding: 5px;
 }
-article button{
+.tw-followCard-user{
+    display: flex;
+    flex-direction: column;
+}
+.tw-followCard-userName{
+    opacity: .6;
+}
+.tw-followCard-button{
+    display: grid;
+    place-content: center;
+}
+.tw-followCard-button button{
     margin-left: 16px;
     height: fit-content;
     width: fit-content;
@@ -25,15 +37,4 @@ article button{
     background-color: white;
     color: black;
     font-weight: bold;
-}
-article header div{
-    display: flex;
-    flex-direction: column;
-}
-article header span{
-    opacity: .6;
-}
-article aside{
-    display: grid;
-    place-content: center;
 }
